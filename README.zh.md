@@ -1,5 +1,7 @@
 # dsh-adhd-session-mode
 
+[English](./README.md) · **简体中文**
+
 由 GitHub 上的 Skill 项目 [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) **转换而来的** [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件。它**只在单个会话中生效，从不全局生效**。
 
 一个系统提示词区段改变助手的回复方式——行动先行、步骤编号、时间估算用真实单位、不写开场白与收尾语——并且每个会话各自决定开还是关。

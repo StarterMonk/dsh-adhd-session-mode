@@ -1,5 +1,7 @@
 # dsh-adhd-session-mode
 
+**English** · [简体中文](./README.zh.md)
+
 A [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) plugin **converted from the GitHub skill project [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)**. It takes effect **in one session at a time — never globally**.
 
 One system-prompt section rewrites how the assistant replies — action first, numbered steps, concrete time estimates, no preamble or closers — and every session switches it on or off on its own.
