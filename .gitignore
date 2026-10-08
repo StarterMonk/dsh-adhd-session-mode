@@ -1,0 +1,16 @@
+# Dependencies (the plugin itself ships none)
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Editor and OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*~
+
+# Anything a local harness run leaves behind
+*.log
+.dsh/

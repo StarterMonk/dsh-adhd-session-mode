@@ -1,0 +1,19 @@
+# dsh-adhd-session-mode: one Host plugin row.
+#
+# alwaysOn: false  — a session starts with the mode off and turns it on with /i-have-adhd.
+# alwaysOn: true   — every session starts in ADHD mode.
+#
+# The mode itself is per session and lives in that session's log; this config only
+# decides what a session starts as. Override it from your profile's own patch layer
+# (a matching override replaces the complete `config`) so your setting survives
+# upgrades of this bundle:
+#
+#   - id: i-have-adhd
+#     name: dsh-adhd-session-mode
+#     config:
+#       alwaysOn: true
+- insert:
+    - id: i-have-adhd
+      name: dsh-adhd-session-mode
+      config:
+        alwaysOn: false

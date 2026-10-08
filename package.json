@@ -1,0 +1,59 @@
+{
+  "name": "dsh-adhd-session-mode",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness plugin converted from ayghri/i-have-adhd: ADHD-friendly output shaping that takes effect in a single session, never globally.",
+  "icon": "./icon.svg",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "adhd",
+    "output-style",
+    "accessibility",
+    "productivity",
+    "per-session"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StarterMonk/dsh-adhd-session-mode.git"
+  },
+  "homepage": "https://github.com/StarterMonk/dsh-adhd-session-mode#readme",
+  "bugs": {
+    "url": "https://github.com/StarterMonk/dsh-adhd-session-mode/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./skill/SKILL.md": "./skill/SKILL.md"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "icon.svg",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "skill/SKILL.md",
+    "README.md",
+    "README.zh.md",
+    "LICENSE",
+    "THIRD-PARTY-NOTICES.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}
